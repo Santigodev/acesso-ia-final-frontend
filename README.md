@@ -32,3 +32,6 @@ Bootstrap (Design Layout): https://blog.getbootstrap.com/2024/02/20/bootstrap-5-
 
 Jquery (JS): https://jquery.com/
 - Comando: npm install jquery
+
+Sweetalert2
+- Comando: npm install sweetalert2
