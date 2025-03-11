@@ -40,8 +40,9 @@ export default {
     async Processarlogin() {
       try{
         const response = await axios.post('https://localhost:7263/api/v1/login/autenticar', this.dadosLogin);
-        const resultado = response.data;
-        console.log(resultado);
+        localStorage.setItem('dados-usuario-logado', 
+        JSON.stringify(response.data));
+        
         Swal.fire({
           title: 'Login realizado com sucesso',
           text: 'Você será redirecionado para o sistema',
