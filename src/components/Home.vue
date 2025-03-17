@@ -6,6 +6,18 @@
         <a class="navbar-brand" href="#">
           <img src="@/assets/logo.png" class="logo"> Sistema IA
         </a>
+
+        <!-- Menu Usuário -->
+         <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <router-link class="nav-link dropdown-toggle"
+              to="/home/usuarios">
+              Usuários
+              </router-link>
+            </li>
+          </ul>
+         </div>
       </div>
       
       <!-- Botão Sair -->
