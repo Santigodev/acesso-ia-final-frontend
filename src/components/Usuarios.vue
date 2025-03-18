@@ -4,7 +4,7 @@
 
         <!-- Botão para criar novo -->
         <div class="mb-3">
-            <router-link to="/usuario/cadastrar" class="btn btn-success">
+            <router-link to="usuarios/cadastrar" class="btn btn-success">
                 <i class="fa fa-plus"></i> Adicionar novo
             </router-link>
         </div>
