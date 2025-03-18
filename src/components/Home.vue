@@ -30,7 +30,7 @@
       </ul>
     </nav>
 
-      <div class="container mt-4 text-center">
+      <div v-if="exibirBemvindo" class="container mt-4 text-center">
       <h2>Bem vindo, {{ nomeUsuarioLogado }}</h2>
     </div>
 
@@ -48,6 +48,12 @@ export default {
     return {
       nomeUsuarioLogado: ''
     };
+  },
+  computed: {
+    exibirBemvindo()
+    {
+      return this.$route.path === '/home';
+    }
   },
   mounted(){
     const usuarioLogado = localStorage.getItem('dados-usuario-logado');
