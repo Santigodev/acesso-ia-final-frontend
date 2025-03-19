@@ -45,9 +45,10 @@
                     <td>{{ usuario.cpf }}</td>
                     <td>{{ usuario.status }}</td>
                     <td>
-                        <button class="btn btn-primary btn-sm"> 
-                        <i class="fa fa-edit"></i> Editar
-                        </button>
+                    <router-link :to="`/home/usuarios/editar/${usuario.id}`" 
+                                class="btn btn-primary btn-sm">
+                            <i class="fa fa-edit"></i> Editar
+                        </router-link>
 
                         <button class="btn btn-danger btn-sm ml-2" @click="excluir(usuario.id)"> 
                         <i class="fa fa-trash"></i> Excluir
